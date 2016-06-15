@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <link href="../interlace.min.css" rel="stylesheet" />
+        <style>
+            h1,
+            h2 {
+                margin-left: 20px;
+            }
+            section {
+                float: left;
+                margin: 20px;
+            }
+            .picture {
+                width: 360px;
+                float: left;
+                vertical-align: top;
+            }
+            body > p {
+                margin: 20px;
+                clear: both;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Interlace.js</h1>
+
+        <p>
+            <a href="https://github.com/Wildtyto/Interlace.js" target="_blank">https://github.com/Wildtyto/Interlace.js</a>
+        </p>
+
+        <section>
+
+            <h3>InterlaceTip</h3>
+
+            <div class="picture" 
+                data-interlace-src="images/pexels-photo-103012.jpg"
+                data-interlace-low="images/pexels-photo-103012.low.jpg"
+                data-interlace-tip></div>
+
+        </section>
+
+        <section>
+
+            <h3>InterlaceTitle</h3>
+
+            <div class="picture" 
+                data-interlace-src="images/pexels-photo-103290.jpg"
+                data-interlace-low="images/pexels-photo-103290.low.jpg"
+                data-interlace-title="Bus"></div>
+
+        </section>
+
+        <section>
+
+            <h3>InterlaceAlt</h3>
+
+            <div class="picture" 
+                data-interlace-src="images/pexels-photo-103520.jpg"
+                data-interlace-low="images/pexels-photo-103520.low.jpg"
+                data-interlace-alt="Papers"></div>
+
+        </section>
+
+        <p>Pictures from <a href="https://www.pexels.com/" target="_blank">pexels</a></p>
+
+    </body>
+
+    <script src="../interlace.min.js"></script>
+
+</html>

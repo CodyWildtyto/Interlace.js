@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <link href="../interlace.min.css" rel="stylesheet" />
+        <style>
+            h1 {
+                margin-left: 20px;
+            }
+            .picture {
+                margin: 20px;
+                width: 360px;
+                height: 360px;
+                float: left;
+            }
+            .picture > img {
+                margin-left: -40px;
+                width: auto;
+            }
+            body > p {
+                margin: 20px;
+                clear: both;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Interlace.js</h1>
+
+        <p>
+            <a href="https://github.com/Wildtyto/Interlace.js" target="_blank">https://github.com/Wildtyto/Interlace.js</a>
+        </p>
+
+        <section></section>
+
+        <p>Pictures from <a href="https://www.pexels.com/" target="_blank">pexels</a></p>
+
+
+    </body>
+
+    <script src="../interlace.min.js"></script>
+    <script>
+        
+        (function (Interlace) {
+
+            "use strict";
+
+            var _sectionElement = document.querySelector("section");
+            var _interlaceElement;
+            var _cache;
+
+            window.onload = function () {
+
+                     [
+                            "pexels-photo-25483",
+                            "pexels-photo-27406",
+                            "pexels-photo-27509",
+                            "pexels-photo-28462",
+                            "pexels-photo-31054",
+                            "pexels-photo-101811",
+                            "pexels-photo-101981",
+                            "pexels-photo-102127"
+                        ].forEach(_createInterlaceElement);
+
+                };
+
+            function _createInterlaceElement(_key) {
+
+                _cache = "?v=" + (+new Date());
+                _interlaceElement = Interlace.new({
+                        interlaceSrc: "images/" + _key + ".jpg" + _cache,
+                        interlaceLow: "images/" + _key + ".low.jpg" + _cache,
+                    });
+                _interlaceElement.classList.add("picture");
+                _sectionElement.appendChild(_interlaceElement);
+
+            }
+
+        }(window.Interlace));
+
+    </script>
+
+</html>
