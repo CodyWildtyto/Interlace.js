@@ -1,8 +1,17 @@
 # Interlace.js
 The pure JavaScript plugin. Executing stunt-man and preview when image file is been loading likes interlaced images.
 
+Origin | Interlace.js
+---- | ----
+![preview-27509-in](http://i.imgur.com/pcEnVuR.gif) | ![preview-27509-in](http://i.imgur.com/VYE3MhG.gif)
 
 ## Usage
+
+### Prepare low quality images
+
+This feature should prepare the low quality image files. It's better to duplicate a small size image what less than 20px of width or height.
+
+### Include files of Interlace.js 
 
 Include **interlace.css** file.
 
@@ -137,11 +146,12 @@ _type: **String** / attribute-name: **data-interlace-alt**_
 
 ## Examples
 
-* <a href="http://wildtyto.github.io/Interlace.js/examples/basic.html" target="_blank">Basic</a>
-* <a href="http://wildtyto.github.io/Interlace.js/examples/optional.html" target="_blank">Optional</a>
+* [Basic](http://wildtyto.github.io/Interlace.js/examples/basic.html)
+* [Optional](http://wildtyto.github.io/Interlace.js/examples/optional.html)
 
 ## Todo
 
+* Fixed width and height
 * Color preview
 * Multiple preview
 
